@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trendy logIn page</title>
+    <link rel= "stylesheet" href="/css/style.css" />
+    <link rel= "stylesheet" href="/css/account.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+  </header>
+  <body>
+    <div id="header" class="container_btn">
+      <ul class="ulCategory">
+        <li id="menuhome"><a style="padding: 12px 16px; margin: 0px 50px; font-size: xx-large;" href="/index">Trendy</a></li>
+        <!-- <li><a href="guestlogin.html">Guest Login</a></li>
+        <li><a id="memberLogin" href="javascript:void(0)">Member Login</a></li> -->
+        <li id="menuMap"><a href="/map">Map</a></li>
+        <li id="menuFavourits"><a href="/favourites">Favourites</a></li>
+        <li id="menuFavourits"><a class="active" href="/account">Account</a></li>
+        </ul>
+        <input type="button" id="btnSignOut" class="btn" value="Sign out" />
+    </div>
+    <div id="left-menu">
+        <div class="menu-container">
+            <h2 id="account-header-h2">Account</h2>
+        </div>
+        <div class="menu-button current">
+            <div class="menu-container current">
+                <div class="menu-item-container current">
+                    <a class="account-menu-item current">Account Information</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-button ">
+            <div class="menu-container">
+                <div class="menu-item-container">
+                    <a class="account-menu-item">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contents">
+        <div>
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/favourites.js"></script>
+    <script src="/js/account.js"></script>
+  </body>
+</html>

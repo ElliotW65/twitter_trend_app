@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trendy logIn page</title>
+        <link rel= "stylesheet" href="style.css" />
+</head> 
+        <body>
+            <div id="header" class="container_btn">
+                <ul>
+                    <li><a class="active" style="padding: 0px;padding: 10px 16px;" href="index.html"><img src="images/home_btn.png" alt="Home"></a></li>
+                    <li><a href="guestlogin.html">Guest Login</a></li>
+                    <li><a href="memberlogin.html">Member Login</a></li>
+                    <li><a href="trend.html">Trend</a></li>
+                    <li><a href="favourits.html">Favourits</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="city_country.html">City/Country</a></li>
+                    <li><input type="text" placeholder="Search....."></li>
+                  </ul>
+            </div>
+            <div class="container">
+                <h1>Guest Login</h1>
+            </div>
+            <div class="login-box" style="display: none;">
+                <h1>Login</h1>
+                <div class ="textbox">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <input type = "text" placeholder= "Username" name= "" value= "">
+                </div>
+                <div class ="textbox">
+                    <i class="fas fa-unlock-alt"></i>
+                    <input type="password" id="psw" placeholder="Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    <!--<input type="password" placeholder="Password" name= "password" id="password"  
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> -->
+                </div>
+                
+                <input class ="btn" type="button" name= "" value="Sign In">
+                <input class ="btn1" type ="button" name="" value="Forget Username / Password">
+            </div>
+
+            <div id="footerMenu" class="bottomMenu">
+                <ul>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="termscondition.html">Terms & Conditions</a></li>
+                  </ul>
+            </div>
+        </body>
+        <footer>
+            
+            <script src="Index.js"></script>
+        </footer>
+</html>

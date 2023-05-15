@@ -1,0 +1,28 @@
+{
+  "name": "f28cd-creative-design-project-coursework",
+  "version": "1.0.0",
+  "description": "Twitter trend analysis project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab-student.macs.hw.ac.uk:jy84/f28cd-creative-design-project-coursework.git"
+  },
+  "author": "Elliot Whitehouse ew2000@hw.ac.uk",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mapbox-gl": "^2.1.1",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "socket.io": "^3.1.2"
+  }
+}

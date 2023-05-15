@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trendy logIn page</title>
+    <link rel= "stylesheet" href="/css/style.css" />
+    <link rel= "stylesheet" href="/css/favourites.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+  </header>
+  <body>
+    <div id="header" class="container_btn">
+      <ul class="ulCategory">
+        <li id="menuhome"><a style="padding: 12px 16px; margin: 0px 50px; font-size: xx-large;" href="/index">Trendy</a></li>
+        <!-- <li><a href="guestlogin.html">Guest Login</a></li>
+        <li><a id="memberLogin" href="javascript:void(0)">Member Login</a></li> -->
+        <li id="menuMap"><a href="/map">Map</a></li>
+        <li id="menuFavourits"><a class="active" href="/favourites">Favourites</a></li>
+        <li id="menuFavourits"><a href="/account">Account</a></li>
+        </ul>
+        <input type="button" id="btnSignOut" class="btn" value="Sign out" />
+    </div>
+    <div class="background">
+      <div class="fav-cards">
+        <div class="card">
+          <div class="container">
+            <h3><b>London</b></h3>
+            <div class="kebab">
+              <figure></figure>
+              <figure class="middle"></figure>
+              <p class="cross">x</p>
+              <figure></figure>
+              <ul class="dropdown">
+                <li><a>Remove</a></li>
+                <li><a>Export</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b>Paris</b></h3>
+            <div class="kebab">
+              <figure></figure>
+              <figure class="middle"></figure>
+              <p class="cross">x</p>
+              <figure></figure>
+              <ul class="dropdown">
+                <li><a>Remove</a></li>
+                <li><a>Export</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b>Tokyo</b></h3>
+            <div class="kebab">
+              <figure></figure>
+              <figure class="middle"></figure>
+              <p class="cross">x</p>
+              <figure></figure>
+              <ul class="dropdown">
+                <li><a>Remove</a></li>
+                <li><a>Export</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b></b></h3>
+          </div>
+        </div>
+      </div>
+      <div id="results-pane">
+       <div id="result-container">
+         <div id="results-header">
+            <h1>London</h1>
+         </div>
+         <div id="chart">
+          <canvas id="pieChart" width="400" height="400" style="margin: auto;"></canvas>
+         </div>
+       </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/favourites.js"></script>
+  </body>
+</html>

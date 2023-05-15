@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Trendy Homepage</title>
+        <link rel= "stylesheet" href="/css/style.css" />
+        <script src="jquery.min.js"></script>
+    </head> 
+        <body>
+            {{#if message }}
+                <div class="alert" ".universal-font">
+                <span class="closebtn">&times;</span>
+                <strong>{{message}}</strong>
+                </div>
+            {{/if}}
+
+            <div class="container">
+                <div id= "imageSlider">
+                        <img class="mySlides" src="/Trendy/images/London_1.PNG" style="width:100%; height:auto;" />
+                        <img class="mySlides" src="/Trendy/images/London_2.PNG" style="width:100%; height: auto;" />
+                        <img class="mySlides" src="/Trendy/images/Paris_1.PNG" style="width:100%; height: auto;" />
+                        <img class="mySlides" src="/Trendy/images/Paris_2.PNG" style="width:100%; height: auto;" />
+                        <div class="wrapper">
+                             <h1 class="giga universal-font regular double-header-line">TRENDY</h1>
+                                <p class="delta oswald regular uppercase ls-large">Trending Twitter Topics Around the World</p>
+                            <button class="button300" onclick="getMap();">Guest Login</button>
+                            <button class="button" href= "#loginModal">Member Login</button>
+                            <button class="button" href= "#signUpModal">Sign Up</button>
+                        </div>
+                </div>
+            </div>
+
+
+    <!-- The Login Modal -->
+    <div id="loginModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content ">
+                <span class="close">&times;</span>
+                <h2>User Login</h2>
+            <div class="login-box ">
+                <p>
+                    <form action="/auth/login" method="POST">
+                    <label for="email">
+                        <strong>
+                            Email
+                        </strong>
+                    </label>
+                        <input type="email" placeholder="example@email.com" name="email" required>
+                </p>
+                <p>
+                    <label for="password">
+                        <strong>
+                            Password
+                        </strong>
+                    </label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                <p>
+                <p>
+                    <button type="submit" class="modal-button ">
+                        Login
+                    </button>
+                    </form>
+                    <button href="#resetPasswordModal" class="button" style="padding: 7px; font-size: 13px;">
+                        Forgotten Password
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+       
+ <!-- Register Modal content -->
+ <div id="signUpModal" class="modal">
+    <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create Account</h2>
+            <form action="/auth/register" method="POST">
+                    <label for="email">
+                        <strong>
+                            Email
+                        </strong>
+                    </label>
+                    <input type="email" placeholder="example@email.com" name="email" required>
+                </p>
+                <p>
+                    <label for="password">
+                        <strong>
+                            Password
+                        </strong>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                </p>
+                <p>
+                    <label for="passwordConfirm">
+                        <strong>
+                            Confirm Password
+                        </strong>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="passwordConfirm" required>
+                </p>
+                <p>
+                    <button type="submit" class="modal-button">
+                        Create Account
+                    </button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+ <!-- Reset Password Modal content -->
+ <div id="resetPasswordModal" class="modal" style="left: 350px">
+    <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Please enter your registered e-mail so you can reset your password</h2>
+            <!--<form action="/auth/register" method="POST">-->
+                    <label for="email">
+                        <strong>
+                            Email
+                        </strong>
+                    </label>
+                    <input type="email" placeholder="example@email.com" name="email" required>
+                    <button type="submit" class="modal-button">
+                        Reset Password
+                    </button>
+                </p>
+            </form>
+    </div>
+</div>
+
+<!-- End Guest Login Modal -->
+<div class="bottomMenu">
+    <label class="switch">
+        <input type="checkbox" checked="">
+        <span class="slider round"></span>
+    </label>
+        <ul>
+            <li><a href="/contactus">Contact Us</a></li>
+            <li><a href="/contactus">Help</a></li>
+            <li><a href="/contactus">Feedback</a></li>
+            <li><a href="/contactus">Cookies</a></li>
+            <li><a href="/contactus">Terms & Conditions</a></li>
+        </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/Index.js"></script>
+<script src="index1.js"></script>
+
+</body>
+</html>

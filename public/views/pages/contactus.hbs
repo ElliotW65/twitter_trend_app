@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trendy logIn page</title>
+        <link rel= "stylesheet" href="/css/style.css" />
+        <script src="jquery.min.js"></script>
+</head> 
+        <body>
+            <div id="header" class="container_btn">
+                <ul>
+                    <li id="menuhome"><a style="padding: 0px;padding: 10px 16px;" href="/index"><img src="/Trendy/images/home_btn.png" alt="Home"></a></li>
+                    <!-- <li><a href="guestlogin.html">Guest Login</a></li>
+                    <li><a id="memberLogin" href="javascript:void(0)">Member Login</a></li> -->
+                    <li id="menuTrend"><a href="trend.html">Trend</a></li>
+                    <li id="menuFavourits"><a href="/Trendy/static/favourites.html">Favourits</a></li>
+                    <li id="menuMap"><a href="map.html">Map</a></li>
+                    <li  id="menuCityCountry"><a href="city_country.html">City/Country</a></li>
+                    <li id="menuSearch">
+                       <!-- <form id="form" action="">
+                            <input id="input" type="text" placeholder="Search....."></li>
+                        </form> -->
+                        <div id="geocoder" class="geocoder"></div>
+                    </li>
+                  </ul>
+                  <input type="button" id="btnSignOut" class="btn" value="Sign out" />
+            </div>
+            <div class="container">
+               <img src="/Trendy/images/U_C 1.PNG" />
+            </div>
+
+            <div id="footerMenu" class="bottomMenu">
+                <ul>
+                    <li><a href="/Trendy/static/contactus.html">Contact Us</a></li>
+                    <li><a href="/Trendy/static/contactus.html">Help</a></li>
+                    <li><a href="/Trendy/static/contactus.html">Feedback</a></li>
+                    <li><a href="/Trendy/static/contactus.html">Cookies</a></li>
+                    <li><a href="/Trendy/static/contactus.html">Terms & Conditions</a></li>
+                  </ul>                  
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </body>
+        <footer>
+            
+            <script src="Index.js"></script>
+            <script src="Index1.js"></script>
+            <script>
+                $(document).ready(function(){
+                    document.getElementById("header").style.display = "block";
+                    document.getElementById("footerMenu").style.display = "block";
+                    function getCookie(name) {
+                        var nameEQ = name + "=";
+                        var ca = document.cookie.split(';');
+                        var c = ca[0];
+                        return c.substring(nameEQ.length,c.length);
+}
+                    var loginId = getCookie('loginId');
+                    if(loginId == "G")
+                    {
+                        $("#menuTrend").css("display", "none");
+                        $("#menuFavourits").css("display", "none");
+                        $("#menuCityCountry").css("display", "none");
+                        $("#menuSearch").css("display", "block");
+                    }
+                    else if (loginId == "M")
+                    {
+                        $("#menuTrend").css("display", "block");
+                        $("#menuFavourits").css("display", "block");
+                        $("#menuCityCountry").css("display", "block");
+                        $("#menuSearch").css("display", "block");
+                    }
+                });
+            </script>
+        </footer>
+</html>
